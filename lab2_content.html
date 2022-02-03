@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <script type="text/javascript" src="js/loremipsum.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Your Website</title>
+  </head>
+
+  <body>
+    <div id="menubar" class="header">
+      <button type="button" onclick="addFeatured()">Add featured</button>
+      <button type="button" onclick="removeFeatured()">Remove featured</button>
+      <button type="button" onclick="addSecondary()">Add secondary</button>
+      <button type="button" onclick="removeSecondary()">Remove secondary</button>
+      <button type="button" onclick="addShort()">Add short</button>
+      <button type="button" onclick="removeShort()">Remove short</button>
+    </div>
+    <div id="wrapper">
+      <div id="main">
+        <div id="featured" class="col"></div>
+        <div id="short" class="col"></div>
+      </div>
+      <div id="secondary" class="col"></div>
+    </div>
+    <script>
+      addFeatured(3);
+      addSecondary(4);
+      addShort(5);
+    </script>
+  </body>
+
+</html>
